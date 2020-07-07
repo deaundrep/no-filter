@@ -1,6 +1,46 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const onlyOdds = function(nums){
+  let newArr = [];
+    for (const item of nums){
+      if ((item % 2) !== 0 ){
+        newArr.push(item)
+      }
+  }
+  return newArr;
+}
+
+const onlyEvens = function(nums){
+  let newArr = [];
+    for (const item of nums){
+      if ((item % 2) === 0 ){
+        newArr.push(item)
+      }
+  }
+  return newArr;
+}
+
+const shortNamesOnly = function(names){
+  let newArr = [];
+  for (const item of names){
+    if (item.length < 7){
+      newArr.push(item)
+    }
+  }
+  return newArr
+}
+
+const dNames = function(names){
+  let newArr = [];
+  for (const item of names){
+    if (item.includes('D')){
+      newArr.push(item)
+    }
+  }
+  return newArr;
+}
+
 
 
 
